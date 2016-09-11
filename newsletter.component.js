@@ -16,7 +16,7 @@ var Newsletter = (function () {
 }());
 var NewsletterComponent = (function () {
     function NewsletterComponent() {
-        this.newstype = ["Baking", "Starters", "Dinner"];
+        this.size = ["35", "36", "37", "40", "41", "42", "44"];
         this.newsletter = new Newsletter();
         this.submitted = false;
     }

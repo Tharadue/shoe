@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 class Newsletter {
-    fullname:string;
-    email:string;
-    newstype:string;
+    size:string;
+    qty:string;
 }
 
 @Component({
@@ -11,7 +10,7 @@ class Newsletter {
     templateUrl: './app/newsletter.component.html'
 })
 export class NewsletterComponent implements OnInit {
-    newstype:string[]= ["Baking", "Starters", "Dinner"];
+    size:string[]= ["35", "36", "37", "40", "41", "42", "44"];
 
     newsletter:Newsletter = new Newsletter();
 
