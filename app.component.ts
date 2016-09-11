@@ -7,6 +7,7 @@ import { ShoeDetailComponent } from './shoe-detail.component';
 import { FilterComponent } from './filter.component'; 
 import { HomepageComponent } from './homepage.component';
 import { FooterComponent } from './footer.component';
+import { ProductOverviewComponent } from './product-overview.component';
 
 @Component({
     selector: 'my-app',

@@ -5,6 +5,7 @@ import { ShoeListComponent } from './shoe-list.component';
 import { ShoeDetailComponent } from './shoe-detail.component'; 
 import { FilterComponent } from './filter.component'; 
 import { HomepageComponent } from './homepage.component'; 
+import { ProductOverviewComponent } from './product-overview.component'; 
 
 const appRoutes: Routes = [
     {
@@ -19,6 +20,10 @@ const appRoutes: Routes = [
     {
         path: 'shoelist',
         component: ShoeListComponent
+    },
+    {
+        path: 'product-overview',
+        component: ProductOverviewComponent
     }
 ]
 
