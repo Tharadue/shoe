@@ -9,9 +9,12 @@ import { DemoDataService } from './demo-data.service';
 })
 
 export class ProductOverviewComponent {
+        shoe: Shoe;
+
+    constructor(private demoDataService: DemoDataService, private route: ActivatedRoute) { }
 
     ngOnInit() {
-    
+        let shoeId = this.route.snapshot.params['shoeId'];
+        this.shoe = this.demoDataService.getDemoDataById(shoeId);
     }
-
 }

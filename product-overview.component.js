@@ -9,17 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var demo_data_service_1 = require('./demo-data.service');
 var ProductOverviewComponent = (function () {
-    function ProductOverviewComponent() {
+    function ProductOverviewComponent(demoDataService, route) {
+        this.demoDataService = demoDataService;
+        this.route = route;
     }
     ProductOverviewComponent.prototype.ngOnInit = function () {
+        var shoeId = this.route.snapshot.params['shoeId'];
+        this.shoe = this.demoDataService.getDemoDataById(shoeId);
     };
     ProductOverviewComponent = __decorate([
         core_1.Component({
             selector: 'product-overview',
             templateUrl: './app/product-overview.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [demo_data_service_1.DemoDataService, router_1.ActivatedRoute])
     ], ProductOverviewComponent);
     return ProductOverviewComponent;
 }());
