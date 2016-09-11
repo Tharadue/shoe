@@ -1,0 +1,20 @@
+<div class="product-grid-front"><br>
+    <h3>Special <red>products</red></h3>
+        <div class="flexbox">
+            <div *ngFor="let shoe of shoes" class="shoe-item">
+                <img src="/pictures/brands/{{shoe.brand}}.png" class="product-logo">
+                <br><img src="/pictures/shoes/{{shoe.picture_one}}.jpg" class="product-picture">
+                <div class="product-divider"></div>
+                <div class="product-name"><a [routerLink]="['detail/', shoe.id]">{{shoe.name | uppercase}}</a></div>
+                <div class="product-button">
+                    <table>
+                        <tr>
+                            <td class="first">{{shoe.price}} $</td>
+                            <td>Get now</td>
+                            <td><img src="/pictures/get-now-arrow.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div> 
+</div>

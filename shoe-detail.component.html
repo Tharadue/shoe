@@ -1,0 +1,80 @@
+<filter></filter>
+
+<div *ngIf="shoe">
+<div class="content">
+    <div class="shoe-detail">
+        <div class="shoe-header">
+        <h1>Men's Footwear</h1>
+        <h2>{{shoe.name}}</h2></div>
+
+
+        <div class="gallery">
+            <div class="big">
+                <img src="pictures/shoes/{{shoe.picture_one}}.jpg" style="width:100%">
+                <img class="promoSlides" src="pictures/shoes/{{shoe.picture_one}}.jpg" style="width:100%">
+                <img class="promoSlides" src="pictures/shoes/{{shoe.picture_two}}.jpg" style="width:100%">
+                <img class="promoSlides" src="pictures/shoes/{{shoe.picture_three}}.jpg" style="width:100%">
+                            </div>
+
+                 <div class="thumbnail-box">
+                    <div class="thumbnail-item">
+                    <img class="demo thumbnail" src="pictures/shoes/{{shoe.picture_one}}.jpg" style="width:100%" onclick="currentDiv(1)">
+                    </div>
+                    <div class="thumbnail-item">
+                    <img class="demo thumbnail" src="pictures/shoes/{{shoe.picture_two}}.jpg" style="width:100%" onclick="currentDiv(2)">
+                    </div>
+                    <div class="thumbnail-item last">
+                    <img class="demo thumbnail" src="pictures/shoes/{{shoe.picture_three}}.jpg" style="width:100%" onclick="currentDiv(3)">
+                    </div>
+                </div>
+        </div>
+
+<div class="shop">
+    <table>
+        <tr>
+            <td class="first">
+                <div class="price-box-top">
+
+                    <div class="reviews">
+                        <img src="pictures/stars.png">
+                        <br>Read 8 reviews
+                        </div>
+
+                        <div class="reduced-from-price">
+                            {{shoe.price}}
+                            </div>
+                    </div>
+                
+                <div class="price-box-bottom">
+                        <div class="price">
+                            {{shoe.price}}$
+                            </div>
+                </div>
+         </td>
+
+        <td>
+            <div class="savings"><br>
+            <img src="pictures/piggy-bank.png">
+            <br>Save 40%  now
+        </div>
+        </td>
+        </tr>
+    </table>
+
+    <div class="description">
+        <div class="seps"></div>
+        
+        {{shoe.description}}
+        
+        </div>
+    <div class="place-order">
+        <img src="pictures/delivery.png"> Free shipping
+        <newsletter></newsletter>
+    </div>
+    <div class="share-this">Share this:
+        <br><img src="pictures/sharing.png">
+    </div>
+
+</div>
+</div>
+
