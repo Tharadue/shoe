@@ -13,17 +13,11 @@
         </tr>
     </table>
 
-
-    <button type="submit" [disabled]="!newsletterForm.valid">Submit</button>
+    <button type="submit" class="register button" [disabled]="!newsletterForm.valid">Register <img src="/pictures/arrow.png" height="15px">
+    </button>
 </form>
 </div>
 
 <div [hidden]="!submitted">
-    Your request have been submitted!
-    {{newsletter.fullname}} {{newsletter.email}} {{newsletter.newstype}}
-</div>
-
-<div>
-    <button class="register button">Register <img src="/pictures/arrow.png" height="15px">
-    </button>
+    Your order have been submitted!
 </div>
