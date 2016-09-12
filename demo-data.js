@@ -13,7 +13,7 @@ exports.SHOEDATA = [{
         "id": 2,
         "name": "Nike ISO 3 - Turn it up",
         "brand": "nike",
-        "picture_one": "mens-timberland-westbank-1",
+        "picture_one": "nike-iso-3-turn-it-up-1",
         "picture_two": "mens-timberland-westbank-2",
         "picture_three": "mens-timberland-westbank-3",
         "price": "199.00",
@@ -71,7 +71,7 @@ exports.SHOEDATA = [{
     },
     {
         "id": 8,
-        "name": "Saucony's Woman trainer UN 2.2",
+        "name": "Saucony's Woman trainer UN ",
         "brand": "saucony",
         "picture_one": "mens-timberland-westbank-1",
         "picture_two": "mens-timberland-westbank-2",
