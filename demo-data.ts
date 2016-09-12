@@ -12,7 +12,7 @@ export const SHOEDATA:Shoe[] = [{
     },
     {
         "id" : 2,
-        "name" : "Nike ISO 3",
+        "name" : "Nike ISO 3 - Turn it up",
         "brand" : "nike",
         "picture_one" : "mens-timberland-westbank-1",         
         "picture_two" : "mens-timberland-westbank-2",         
@@ -23,7 +23,7 @@ export const SHOEDATA:Shoe[] = [{
     ,
     {
         "id" : 3,
-        "name" : "Hurricane ISO 3",
+        "name" : "Hurricane Space Fighter",
         "brand" : "saucony",
         "picture_one" : "mens-timberland-westbank-1",         
         "picture_two" : "mens-timberland-westbank-2",         
@@ -34,7 +34,7 @@ export const SHOEDATA:Shoe[] = [{
     ,
     {
         "id" : 4,
-        "name" : "Hurricane ISO 3",
+        "name" : "Nike Nice Trainer, Do it",
         "brand" : "saucony",
         "picture_one" : "mens-timberland-westbank-1",         
         "picture_two" : "mens-timberland-westbank-2",         
