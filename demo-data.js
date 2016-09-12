@@ -71,7 +71,7 @@ exports.SHOEDATA = [{
     },
     {
         "id": 8,
-        "name": "Nike Nice Trainer, Do it",
+        "name": "Saucony's Woman trainer UN 2.2",
         "brand": "saucony",
         "picture_one": "mens-timberland-westbank-1",
         "picture_two": "mens-timberland-westbank-2",

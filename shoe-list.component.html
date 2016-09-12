@@ -1,5 +1,11 @@
 <div class="product-grid-front"><br>
-    <h3>Special <red>products</red></h3>
+    <table width="100%">
+        <tr>
+            <td><h3>Special <red>products</red></h3></td>
+            <td class="right"><a href="#"><img src="pictures/arrow-view.png"> View all products</a></td>
+        </tr>
+    </table>
+
         <div class="flexbox">
             <div *ngFor="let shoe of shoes" class="shoe-item"><a [routerLink]="['detail/', shoe.id]">
                 <img src="/pictures/brands/{{shoe.brand}}.png" class="product-logo">
